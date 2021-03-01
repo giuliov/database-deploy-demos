@@ -1,0 +1,10 @@
+ALTER TABLE table_foo ADD
+    col2 NVARCHAR(MAX) NULL
+GO
+
+ALTER PROCEDURE myproc
+AS
+BEGIN
+ SELECT col1, col2
+ FROM table_foo
+END
